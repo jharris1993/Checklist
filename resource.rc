@@ -1,0 +1,18 @@
+#include <windows.h>
+
+#define IDC_STATIC    -1
+#define IDC_CHECKBOX  200
+#define IDC_CONTINUE  101
+
+IDD_DIALOG1 DIALOGEX 0, 0, 300, 200
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Flight Simulator"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Flight Simulator Checklist",IDC_STATIC,10,10,280,20
+    CONTROL         "Item 1", IDC_CHECKBOX, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 20, 40, 260, 20
+    CONTROL         "Item 2", IDC_CHECKBOX, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 20, 70, 260, 20
+    CONTROL         "Item 3", IDC_CHECKBOX, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 20, 100, 260, 20
+    PUSHBUTTON      "Continue", IDC_CONTINUE, 100, 130, 120, 30
+END
+
