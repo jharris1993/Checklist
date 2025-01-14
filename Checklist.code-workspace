@@ -4,5 +4,9 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.autoSave": "afterDelay",
+		"editor.columnSelection": true,
+		"editor.defaultFormatter": "ms-vscode.cpptools"
+	}
 }
